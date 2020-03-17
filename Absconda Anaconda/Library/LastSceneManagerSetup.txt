@@ -1,5 +1,6 @@
 sceneSetups:
-- path: Assets/Scenes/SampleScene.unity
+- path: Z:/Shared/Liam/COMPUTERS ARE GETTING IMAGED SAVE MEEEEEEEEEE/GitRepository/Ugh/New
+    Unity Project/Assets/Scenes/Scene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
