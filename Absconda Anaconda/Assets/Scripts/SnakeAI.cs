@@ -8,7 +8,7 @@ public class SnakeAI : MonoBehaviour
     //Allows me to access the Navmesh in script
     private NavMeshAgent nav;
     //Accessing transforms required for pathing. targetLocation is to be assigned by setNewDestination
-    public Transform targetLocation;
+    public Vector3 targetLocation;
     //Allows the snake to be aware that the player is nearby and thus, avoid them
     public Transform playerLocation;
     //Where the snake idles, and where the snake will return to if the player gives up
@@ -21,6 +21,17 @@ public class SnakeAI : MonoBehaviour
     private bool atDestination = true;
     //Literally just a garbage timer because I don't know how to make real timers
     private int snakeFear = 0;
+    //Snake's maximum run distance
+    public float radius = 20;
+
+    [System.NonSerialized]
+    public int rePathCount = 0;
+
+
+
+
+    private float realRadius;
+    private float angle;
 
 
     private void Awake()
@@ -57,12 +68,16 @@ public class SnakeAI : MonoBehaviour
         if(atDestination == true && snakeFear > 0)
         {
             setNewDestination();
+            rePathCount++;
         }
     }
 
 
     private void setNewDestination()
     {
+        Random.Range(0, radius) = realRadius;
+        Random.Range(0, 360) = angle;
 
+        Mathf.Asin(Random.Range(0,360))
     }
 }
