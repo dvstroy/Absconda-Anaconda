@@ -71,7 +71,6 @@ public class SnakeAI : MonoBehaviour
         {
             if (atDestination)
             {
-                atDestination = false;
                 repathCount++;
                 setNewDestination();
             }
@@ -104,6 +103,7 @@ public class SnakeAI : MonoBehaviour
 
         if (Physics.Raycast(testLocation+transform.position, Vector3.down, out var hit, 100))
         {
+            atDestination = false;
             targetLocation = hit.point;
         }
 
