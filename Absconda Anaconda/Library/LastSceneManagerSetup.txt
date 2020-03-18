@@ -1,6 +1,5 @@
 sceneSetups:
-- path: Z:/Shared/Liam/COMPUTERS ARE GETTING IMAGED SAVE MEEEEEEEEEE/All Unity Projects
-    Term 2/Navmeshes/AI Tests/New Unity Project/Assets/Scene/AIScene1.unity
+- path: Assets/Scenes/Liam's Abhorrent AI Scene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

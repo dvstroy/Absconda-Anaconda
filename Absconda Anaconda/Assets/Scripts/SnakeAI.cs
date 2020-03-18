@@ -23,7 +23,7 @@ public class SnakeAI : MonoBehaviour
     public float radius = 20;
     //Allows us, in Unity Editor, to track how many times the snake repaths
     [System.NonSerialized]
-    public int rePathCount = 0;
+    public int repathCount = 0;
 
     [SerializeField]
     private float FearTime;
@@ -42,12 +42,15 @@ public class SnakeAI : MonoBehaviour
 
     private void Update()
     {
+        //Realistically not needed, but I don't want to move things
         SnakeUpdate();
     }
 
     private void SnakeUpdate()
     {
+        //Snake wonders whether it's scared
         SnakeThink();
+        //Snake decides what it wants to do
         SnakeDecide();
     }
 
@@ -69,7 +72,7 @@ public class SnakeAI : MonoBehaviour
             if (atDestination)
             {
                 atDestination = false;
-                rePathCount++;
+                repathCount++;
                 setNewDestination();
             }
         } else
@@ -94,11 +97,18 @@ public class SnakeAI : MonoBehaviour
         float triangleZ = realRadius * (Mathf.Cos(angle));
 
         //Assigning that to the Vector3 targetLocation
-        targetLocation.x = triangleX;
-        targetLocation.z = triangleZ;
-        targetLocation.y = 0;
+        Vector3 testLocation = Vector3.zero;
+        testLocation.x = triangleX;
+        testLocation.z = triangleZ;
+        testLocation.y =50;
+
+        if (Physics.Raycast(testLocation+transform.position, Vector3.down, out var hit, 100))
+        {
+            targetLocation = hit.point;
+        }
+
 
         //He goes
-        nav.SetDestination(transform.position + targetLocation);
+        nav.SetDestination(targetLocation);
     }
 }
