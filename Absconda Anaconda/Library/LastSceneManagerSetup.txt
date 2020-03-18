@@ -1,5 +1,6 @@
 sceneSetups:
-- path: Assets/Scenes/GameScene.unity
+- path: Z:/Shared/Liam/COMPUTERS ARE GETTING IMAGED SAVE MEEEEEEEEEE/All Unity Projects
+    Term 2/Navmeshes/AI Tests/New Unity Project/Assets/Scene/AIScene1.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

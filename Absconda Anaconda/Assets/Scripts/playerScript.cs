@@ -28,10 +28,6 @@ public class playerScript : MonoBehaviour
     public bool grounded;
     [Header("Death Ragdoll")]
     public bool movementSmooth;
-    [Header("Dialogue")]
-    public GameObject textCanvas;
-    public GameObject billboardCamera;
-    public Text dialogueText;
 
     //TIME STUFF
     public float timer;
@@ -48,7 +44,6 @@ public class playerScript : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         timer = 0;
         finished = false;
-        dialogueText.text = "";
     }
 
     private void Update()
@@ -58,7 +53,6 @@ public class playerScript : MonoBehaviour
             timer = timer + Time.deltaTime;
             timeDisplay.text = timer.ToString("F2");
         }
-        textCanvas.transform.LookAt(billboardCamera.transform.position);
     }
 
 

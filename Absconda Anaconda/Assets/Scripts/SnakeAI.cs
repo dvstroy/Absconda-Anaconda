@@ -8,9 +8,7 @@ public class SnakeAI : MonoBehaviour
     //Allows me to access the Navmesh in script
     private NavMeshAgent nav;
     //Accessing transforms required for pathing. targetLocation is to be assigned by setNewDestination
-    public Vector3 targetLocation;
-    //Allows the snake to be aware that the player is nearby and thus, avoid them
-    public Transform playerLocation;
+    private Vector3 targetLocation;
     //Where the snake idles, and where the snake will return to if the player gives up
     public Transform homeLocation;
     //Just so I can access this from other scripts in the game
@@ -18,20 +16,17 @@ public class SnakeAI : MonoBehaviour
     //Simplifying some lines of code into a bool
     private bool playerInRange = false;
     //A bool that triggers when the snake reaches targetLocation, can be removed but makes Liam's life easier until Liam brain ons
-    private bool atDestination = true;
+    public bool atDestination = true;
     //Literally just a garbage timer because I don't know how to make real timers
-    private int snakeFear = 0;
+    private float snakeFear = 0;
     //Snake's maximum run distance
     public float radius = 20;
-
+    //Allows us, in Unity Editor, to track how many times the snake repaths
     [System.NonSerialized]
     public int rePathCount = 0;
 
-
-
-
-    private float realRadius;
-    private float angle;
+    [SerializeField]
+    private float FearTime;
 
 
     private void Awake()
@@ -47,37 +42,63 @@ public class SnakeAI : MonoBehaviour
 
     private void Update()
     {
-        // snakeFear is purely a timer that tells the snake to keep running as long as the player is around. If this can be made more efficient, then do so.
-        if(playerInRange == true)
-        {
-            snakeFear = 500;
-        }
-        else
-        {
-            if(snakeFear > 0)
-            {
-                snakeFear--;
-            }
-            else
-            {
-                nav.SetDestination(homeLocation.position);
-            }
-        }
+        SnakeUpdate();
+    }
 
-        //Telling the snake to run when it would otherwise stop
-        if(atDestination == true && snakeFear > 0)
+    private void SnakeUpdate()
+    {
+        SnakeThink();
+        SnakeDecide();
+    }
+
+    private void SnakeThink()
+    {
+        if (playerInRange || Input.GetMouseButtonDown(0))
         {
-            setNewDestination();
-            rePathCount++;
+            snakeFear = FearTime;
+        } else
+        {
+            snakeFear -= Time.deltaTime;
         }
     }
 
+    private void SnakeDecide()
+    {
+        if (snakeFear > 0)
+        {
+            if (atDestination)
+            {
+                atDestination = false;
+                rePathCount++;
+                setNewDestination();
+            }
+        } else
+        {
+            nav.SetDestination(homeLocation.position);
+        }
+
+        if(nav.remainingDistance <= 1)
+        {
+            atDestination = true;
+        }
+    }
 
     private void setNewDestination()
     {
-        Random.Range(0, radius) = realRadius;
-        Random.Range(0, 360) = angle;
+        //Grabbing variables for calculations
+        float realRadius = Random.Range(0, radius);
+        float angle = Random.Range(0, 360) * Mathf.Deg2Rad;
 
-        Mathf.Asin(Random.Range(0,360))
+        //Doing the math to convert angle and radius into X and Z coords
+        float triangleX = realRadius * (Mathf.Sin(angle));
+        float triangleZ = realRadius * (Mathf.Cos(angle));
+
+        //Assigning that to the Vector3 targetLocation
+        targetLocation.x = triangleX;
+        targetLocation.z = triangleZ;
+        targetLocation.y = 0;
+
+        //He goes
+        nav.SetDestination(transform.position + targetLocation);
     }
 }
