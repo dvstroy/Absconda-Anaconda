@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Liam's Abhorrent AI Scene.unity
+- path: Assets/Scenes/Submission for 2.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

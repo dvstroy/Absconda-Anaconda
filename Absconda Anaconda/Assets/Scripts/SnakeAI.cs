@@ -13,15 +13,15 @@ public class SnakeAI : MonoBehaviour
     public Transform homeLocation;
     //Just so I can access this from other scripts in the game
     public static SnakeAI instance;
-    //Simplifying some lines of code into a bool
-    private bool playerInRange = false;
     //A bool that triggers when the snake reaches targetLocation, can be removed but makes Liam's life easier until Liam brain ons
     public bool atDestination = true;
     //Literally just a garbage timer because I don't know how to make real timers
     private float snakeFear = 0;
     //Snake's maximum run distance
     public float radius = 20;
-    //Allows us, in Unity Editor, to track how many times the snake repaths
+    //Tells the snake to have fear
+    private bool isScared = false;
+    //Tracks how many times the snake repa
     [System.NonSerialized]
     public int repathCount = 0;
 
@@ -56,7 +56,7 @@ public class SnakeAI : MonoBehaviour
 
     private void SnakeThink()
     {
-        if (playerInRange || Input.GetMouseButtonDown(0))
+        if (isScared || Input.GetMouseButtonDown(0))
         {
             snakeFear = FearTime;
         } else
@@ -84,6 +84,22 @@ public class SnakeAI : MonoBehaviour
             atDestination = true;
         }
     }
+
+    public void ScareSnake()
+    {
+        isScared = true;
+    }
+    public void SootheSnake()
+    {
+        isScared = false;
+    }
+
+
+    private void OnTriggerStay(Collider other)
+    {
+        snakeFear = 3;
+    }
+
 
     private void setNewDestination()
     {

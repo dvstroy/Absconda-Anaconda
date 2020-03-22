@@ -50,8 +50,8 @@ public class playerScript : MonoBehaviour
     {
         if(finished == false)
         {
-            timer = timer + Time.deltaTime;
-            timeDisplay.text = timer.ToString("F2");
+            //timer = timer + Time.deltaTime;
+           // timeDisplay.text = timer.ToString("F2");
         }
     }
 
