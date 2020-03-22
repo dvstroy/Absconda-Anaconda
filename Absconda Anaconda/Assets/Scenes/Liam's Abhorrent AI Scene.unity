@@ -2476,7 +2476,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 8.467944
+  m_Radius: 10
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1778638131
 MonoBehaviour:
@@ -2704,5 +2704,25 @@ PrefabInstance:
       propertyPath: homeLocation
       value: 
       objectReference: {fileID: 17382246}
+    - target: {fileID: 5584383622684253415, guid: 27f76260b4941144482fd116a261fd2b,
+        type: 3}
+      propertyPath: playerPosition
+      value: 
+      objectReference: {fileID: 1778638127}
+    - target: {fileID: 5584383622684253412, guid: 27f76260b4941144482fd116a261fd2b,
+        type: 3}
+      propertyPath: m_AutoBraking
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5584383622684253412, guid: 27f76260b4941144482fd116a261fd2b,
+        type: 3}
+      propertyPath: m_Acceleration
+      value: 50000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5584383622684253412, guid: 27f76260b4941144482fd116a261fd2b,
+        type: 3}
+      propertyPath: m_Speed
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27f76260b4941144482fd116a261fd2b, type: 3}

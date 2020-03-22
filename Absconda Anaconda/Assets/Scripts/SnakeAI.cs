@@ -21,7 +21,8 @@ public class SnakeAI : MonoBehaviour
     public float radius = 20;
     //Tells the snake to have fear
     private bool isScared = false;
-    //Tracks how many times the snake repa
+    public Transform playerPosition;
+    //Tracks how many times the snake repaths
     [System.NonSerialized]
     public int repathCount = 0;
 
@@ -82,6 +83,7 @@ public class SnakeAI : MonoBehaviour
         if(nav.remainingDistance <= 1)
         {
             atDestination = true;
+            nav.isStopped = true;
         }
     }
 
@@ -103,28 +105,40 @@ public class SnakeAI : MonoBehaviour
 
     private void setNewDestination()
     {
-        //Grabbing variables for calculations
-        float realRadius = Random.Range(0, radius);
-        float angle = Random.Range(0, 360) * Mathf.Deg2Rad;
-
-        //Doing the math to convert angle and radius into X and Z coords
-        float triangleX = realRadius * (Mathf.Sin(angle));
-        float triangleZ = realRadius * (Mathf.Cos(angle));
-
-        //Assigning that to the Vector3 targetLocation
-        Vector3 testLocation = Vector3.zero;
-        testLocation.x = triangleX;
-        testLocation.z = triangleZ;
-        testLocation.y =50;
-
-        if (Physics.Raycast(testLocation+transform.position, Vector3.down, out var hit, 100))
+        var iterator = 0;
+        targetLocation = playerPosition.position;
+        while (Vector3.Distance(targetLocation, playerPosition.position) < 10)
         {
-            atDestination = false;
-            targetLocation = hit.point;
-        }
+            iterator += 1;
+            //Grabbing variables for calculations
+            float realRadius = Random.Range(0, radius);
+            float angle = Random.Range(0, 360) * Mathf.Deg2Rad;
 
+            //Doing the math to convert angle and radius into X and Z coords
+            float triangleX = realRadius * (Mathf.Sin(angle));
+            float triangleZ = realRadius * (Mathf.Cos(angle));
+
+            //Assigning that to the Vector3 targetLocation
+            Vector3 testLocation = Vector3.zero;
+            testLocation.x = triangleX;
+            testLocation.z = triangleZ;
+            testLocation.y = 50;
+
+            if (Physics.Raycast(testLocation + transform.position, Vector3.down, out var hit, 100))
+            {
+                atDestination = false;
+                targetLocation = hit.point;
+            }
+            
+            if(iterator > 10)
+            {
+                break;
+            }
+
+        }
 
         //He goes
         nav.SetDestination(targetLocation);
+        nav.isStopped = false;
     }
 }
