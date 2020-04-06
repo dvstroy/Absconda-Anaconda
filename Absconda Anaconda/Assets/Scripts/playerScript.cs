@@ -28,6 +28,7 @@ public class playerScript : MonoBehaviour
     public bool grounded;
     [Header("Death Ragdoll")]
     public bool movementSmooth;
+    bool isRunning;
 
     //TIME STUFF
     public float timer;
@@ -39,19 +40,21 @@ public class playerScript : MonoBehaviour
     {
         wantedDirection = transform.rotation;
         rb = GetComponent<Rigidbody>();
-       // anim = GameObject.Find(transform.name + "/rabbitrigged").GetComponent<Animator>();
+        anim = GetComponent<Animator>();
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         timer = 0;
         finished = false;
+        isRunning = false;
+
     }
 
     private void Update()
     {
         if(finished == false)
         {
-            //timer = timer + Time.deltaTime;
-           // timeDisplay.text = timer.ToString("F2");
+            timer = timer + Time.deltaTime;
+            timeDisplay.text = timer.ToString("F2");
         }
     }
 
@@ -121,13 +124,13 @@ public class playerScript : MonoBehaviour
         }
         if (Input.GetKey(forward) == false && Input.GetKey(backward) == false && Input.GetKey(left) == false && Input.GetKey(right) == false)
         {
-           //anim.SetBool("running", false);
+           anim.SetBool("isRunning", false);
         }
         else
         {
             wantedDirection = Quaternion.Euler(0, wantedDirection.eulerAngles.y + cameraObject.transform.rotation.eulerAngles.y, 0);
             transform.Translate(Vector3.forward * movementSpeed * 0.1f);
-           // anim.SetBool("running", true);
+           anim.SetBool("isRunning", true);
         }
         //camDirection = Quaternion.Euler(cameraObject.transform.rotation);
         if(movementSmooth == false)
