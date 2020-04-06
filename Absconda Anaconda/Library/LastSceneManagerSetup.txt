@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Low poly Forest scene.unity
+- path: Assets/Scenes/Merged Environment Scene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
