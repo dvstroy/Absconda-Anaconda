@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Merged Environment Scene.unity
+- path: C:/Users/Admin/Desktop/School Unity Projects/Sanke Game/Assets/Scenes/Sandy.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
