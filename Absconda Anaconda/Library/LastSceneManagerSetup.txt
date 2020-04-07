@@ -1,5 +1,5 @@
 sceneSetups:
-- path: C:/Users/Admin/Desktop/School Unity Projects/Sanke Game/Assets/Scenes/Sandy.unity
+- path: Assets/Scenes/AI Testing Scene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
