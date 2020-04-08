@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6f186419bea8687439eddde41974dff5
+guid: e7574e46109b5f54099584dbbdee4431
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable: []
@@ -7,28 +7,23 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: pCube6Mat
-    second: {fileID: 2100000, guid: bd99e13687e0033429cff50d25ef2290, type: 2}
+      name: pCube5Mat
+    second: {fileID: 2100000, guid: aaccecf3b2502d84699c7a5fca671770, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: pPlatonic2Mat
-    second: {fileID: 2100000, guid: 279b9a475523ad24c90dcc20fec0ce3a, type: 2}
+      name: pSolid1Mat
+    second: {fileID: 2100000, guid: cf9ec934df152744899de28caa244f18, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: pSolid4Mat
-    second: {fileID: 2100000, guid: 279b9a475523ad24c90dcc20fec0ce3a, type: 2}
+      name: pSolid2Mat
+    second: {fileID: 2100000, guid: cf9ec934df152744899de28caa244f18, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: pSolid5Mat
-    second: {fileID: 2100000, guid: 279b9a475523ad24c90dcc20fec0ce3a, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: pSolid6Mat
-    second: {fileID: 2100000, guid: 279b9a475523ad24c90dcc20fec0ce3a, type: 2}
+      name: pSolid3Mat
+    second: {fileID: 2100000, guid: cf9ec934df152744899de28caa244f18, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
