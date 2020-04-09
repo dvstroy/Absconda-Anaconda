@@ -238,6 +238,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -927199367670048503, guid: 8e26c045be175c94eb628f02bc6bbd4a,
+        type: 3}
+      propertyPath: m_Name
+      value: Snake (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 8e26c045be175c94eb628f02bc6bbd4a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Snake
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 8e26c045be175c94eb628f02bc6bbd4a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -308,16 +318,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2.4756
       objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 8e26c045be175c94eb628f02bc6bbd4a,
-        type: 3}
-      propertyPath: m_Name
-      value: Snake (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 8e26c045be175c94eb628f02bc6bbd4a,
-        type: 3}
-      propertyPath: m_TagString
-      value: Snake
-      objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: 8e26c045be175c94eb628f02bc6bbd4a,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -352,6 +352,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -927199367670048503, guid: 8e26c045be175c94eb628f02bc6bbd4a,
+        type: 3}
+      propertyPath: m_Name
+      value: Snake (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 8e26c045be175c94eb628f02bc6bbd4a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Snake
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 8e26c045be175c94eb628f02bc6bbd4a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -422,16 +432,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2.4756
       objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 8e26c045be175c94eb628f02bc6bbd4a,
-        type: 3}
-      propertyPath: m_Name
-      value: Snake (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 8e26c045be175c94eb628f02bc6bbd4a,
-        type: 3}
-      propertyPath: m_TagString
-      value: Snake
-      objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: 8e26c045be175c94eb628f02bc6bbd4a,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -486,6 +486,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -927199367670048503, guid: 8e26c045be175c94eb628f02bc6bbd4a,
+        type: 3}
+      propertyPath: m_Name
+      value: Snake
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 8e26c045be175c94eb628f02bc6bbd4a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Snake
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 8e26c045be175c94eb628f02bc6bbd4a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -555,16 +565,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 2.4756
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 8e26c045be175c94eb628f02bc6bbd4a,
-        type: 3}
-      propertyPath: m_Name
-      value: Snake
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 8e26c045be175c94eb628f02bc6bbd4a,
-        type: 3}
-      propertyPath: m_TagString
-      value: Snake
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e26c045be175c94eb628f02bc6bbd4a, type: 3}
@@ -672,6 +672,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -927199367670048503, guid: 8e26c045be175c94eb628f02bc6bbd4a,
+        type: 3}
+      propertyPath: m_Name
+      value: Snake (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 8e26c045be175c94eb628f02bc6bbd4a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Snake
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 8e26c045be175c94eb628f02bc6bbd4a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -742,16 +752,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2.4756
       objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 8e26c045be175c94eb628f02bc6bbd4a,
-        type: 3}
-      propertyPath: m_Name
-      value: Snake (6)
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 8e26c045be175c94eb628f02bc6bbd4a,
-        type: 3}
-      propertyPath: m_TagString
-      value: Snake
-      objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: 8e26c045be175c94eb628f02bc6bbd4a,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -766,6 +766,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -927199367670048503, guid: 8e26c045be175c94eb628f02bc6bbd4a,
+        type: 3}
+      propertyPath: m_Name
+      value: Snake (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 8e26c045be175c94eb628f02bc6bbd4a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Snake
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 8e26c045be175c94eb628f02bc6bbd4a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -835,16 +845,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 2.4756
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 8e26c045be175c94eb628f02bc6bbd4a,
-        type: 3}
-      propertyPath: m_Name
-      value: Snake (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 8e26c045be175c94eb628f02bc6bbd4a,
-        type: 3}
-      propertyPath: m_TagString
-      value: Snake
       objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: 8e26c045be175c94eb628f02bc6bbd4a,
         type: 3}
@@ -952,6 +952,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -927199367670048503, guid: 8e26c045be175c94eb628f02bc6bbd4a,
+        type: 3}
+      propertyPath: m_Name
+      value: Snake (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 8e26c045be175c94eb628f02bc6bbd4a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Snake
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 8e26c045be175c94eb628f02bc6bbd4a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1022,16 +1032,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2.4756
       objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 8e26c045be175c94eb628f02bc6bbd4a,
-        type: 3}
-      propertyPath: m_Name
-      value: Snake (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 8e26c045be175c94eb628f02bc6bbd4a,
-        type: 3}
-      propertyPath: m_TagString
-      value: Snake
-      objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: 8e26c045be175c94eb628f02bc6bbd4a,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1046,6 +1046,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -927199367670048503, guid: 8e26c045be175c94eb628f02bc6bbd4a,
+        type: 3}
+      propertyPath: m_Name
+      value: Snake (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 8e26c045be175c94eb628f02bc6bbd4a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Snake
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 8e26c045be175c94eb628f02bc6bbd4a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1115,16 +1125,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 2.4756
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 8e26c045be175c94eb628f02bc6bbd4a,
-        type: 3}
-      propertyPath: m_Name
-      value: Snake (5)
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 8e26c045be175c94eb628f02bc6bbd4a,
-        type: 3}
-      propertyPath: m_TagString
-      value: Snake
       objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: 8e26c045be175c94eb628f02bc6bbd4a,
         type: 3}
@@ -1644,7 +1644,7 @@ GameObject:
   - component: {fileID: 1656655991}
   m_Layer: 0
   m_Name: Plane
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1783,7 +1783,7 @@ PrefabInstance:
     - target: {fileID: 6363322235716627218, guid: 7011c5b24942e9b4290edb05c2fe3720,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.9699365e-18
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6363322235716627218, guid: 7011c5b24942e9b4290edb05c2fe3720,
         type: 3}
@@ -1830,6 +1830,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2104794100658394747, guid: 7011c5b24942e9b4290edb05c2fe3720,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 80
+      objectReference: {fileID: 0}
     - target: {fileID: 2104794100658394742, guid: 7011c5b24942e9b4290edb05c2fe3720,
         type: 3}
       propertyPath: cameraObject
@@ -1849,6 +1854,11 @@ PrefabInstance:
         type: 3}
       propertyPath: movementSmooth
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2104794100658394742, guid: 7011c5b24942e9b4290edb05c2fe3720,
+        type: 3}
+      propertyPath: jumpForce
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2104794100858800874, guid: 7011c5b24942e9b4290edb05c2fe3720,
         type: 3}

@@ -28,7 +28,6 @@ public class playerScript : MonoBehaviour
     public bool grounded;
     [Header("Death Ragdoll")]
     public bool movementSmooth;
-    bool isRunning;
 
     //TIME STUFF
     public float timer;
@@ -45,7 +44,7 @@ public class playerScript : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         timer = 0;
         finished = false;
-        isRunning = false;
+        grounded = true;
 
     }
 
@@ -162,11 +161,12 @@ public class playerScript : MonoBehaviour
                 if(jumpCheck == true)
                 {
                     rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
-                   // anim.SetTrigger("jump");
+                    anim.SetTrigger("jump");
                     jumpCheck = false;
+                    Debug.Log("jumpCheck is false");
                 }
             }
-            //anim.SetBool("inAir", false);
+            anim.SetBool("inAir", false);
         }
     }
 
@@ -174,8 +174,9 @@ public class playerScript : MonoBehaviour
     {
         if(other.gameObject.tag == "Ground")
         {
-            //anim.SetBool("inAir", true);
+            anim.SetBool("inAir", true);
             jumpCheck = true;
+            Debug.Log("jumpCheck is true");
             grounded = false;
         }
     }
