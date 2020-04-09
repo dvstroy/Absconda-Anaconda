@@ -6,9 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
     path: Assets/Scenes/Snake AI Showcase.unity
     guid: ccc415f462e394a4591d52f460863be6
+  - enabled: 1
+    path: Assets/Scenes/Submission 3 with 3 zones.unity
+    guid: 2c65e7df32596bb408e7c990c772eded
+  - enabled: 1
+    path: Assets/Scenes/Endgame.unity
+    guid: 3848589529b6b524487829c6b48a2ce2
   m_configObjects: {}

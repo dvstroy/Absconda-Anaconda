@@ -11809,6 +11809,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.31532484
       objectReference: {fileID: 0}
+    - target: {fileID: -1315595749860578657, guid: 221565b687dc1204daeb19c52d2ced9e,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bc41781a94fdde9489b6f55789ead850, type: 2}
+    - target: {fileID: -8205571362833684013, guid: 221565b687dc1204daeb19c52d2ced9e,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 58c579542efe3c24e921cb9a2af182df, type: 2}
+    - target: {fileID: -7447799111397994335, guid: 221565b687dc1204daeb19c52d2ced9e,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bc41781a94fdde9489b6f55789ead850, type: 2}
     - target: {fileID: -7910232852140681335, guid: 221565b687dc1204daeb19c52d2ced9e,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -11899,21 +11914,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.x
       value: 69.54401
       objectReference: {fileID: 0}
-    - target: {fileID: -1315595749860578657, guid: 221565b687dc1204daeb19c52d2ced9e,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: bc41781a94fdde9489b6f55789ead850, type: 2}
-    - target: {fileID: -8205571362833684013, guid: 221565b687dc1204daeb19c52d2ced9e,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 58c579542efe3c24e921cb9a2af182df, type: 2}
-    - target: {fileID: -7447799111397994335, guid: 221565b687dc1204daeb19c52d2ced9e,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: bc41781a94fdde9489b6f55789ead850, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 221565b687dc1204daeb19c52d2ced9e, type: 3}
 --- !u!4 &1316624790 stripped
@@ -12049,7 +12049,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
