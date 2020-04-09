@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":false,"showMaterialUpdate":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":49.328372955322269,"y":-18.8724422454834,"z":-9.163036346435547},"rotation":{"x":-0.05930868163704872,"y":-0.7571765780448914,"z":0.6469664573669434,"w":-0.07359789311885834},"size":87.79215240478516,"orthographic":false}
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":false,"showMaterialUpdate":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":693.9953002929688,"y":402.9375305175781,"z":-917.0},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":846.9259033203125,"orthographic":true}
+>>>>>>> PauseMenu
