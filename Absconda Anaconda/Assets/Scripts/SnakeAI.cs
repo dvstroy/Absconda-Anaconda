@@ -20,11 +20,19 @@ public class SnakeAI : MonoBehaviour
     //Snake's maximum run distance
     public float radius = 20;
     //Tells the snake to have fear
-    private bool isScared = false;
+    [System.NonSerialized]
+    public bool isScared = false;
     public Transform playerPosition;
     //Tracks how many times the snake repaths
     [System.NonSerialized]
     public int repathCount = 0;
+
+
+    // ----------------------- Variables for referencing in the animation controller script -----------------------
+    [System.NonSerialized]
+    public bool meme;
+
+
 
     [SerializeField]
     private float FearTime;
@@ -90,6 +98,7 @@ public class SnakeAI : MonoBehaviour
     public void ScareSnake()
     {
         isScared = true;
+        GetComponent<SnakeAnimations>().Spook();
     }
     public void SootheSnake()
     {
