@@ -1,5 +1,0 @@
-sceneSetups:
-- path: Assets/Scenes/Submission 3 with 3 zones.unity
-  isLoaded: 1
-  isActive: 1
-  isSubScene: 0
