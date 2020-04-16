@@ -1017,7 +1017,7 @@ GameObject:
   - component: {fileID: 384926837}
   m_Layer: 0
   m_Name: Snake with anims maybe
-  m_TagString: Untagged
+  m_TagString: Snake
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1823,16 +1823,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4979167092229162939, guid: 1cb51eafaaa274c4d82e8b35bf86f512,
-        type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 3906981531651639488, guid: 1cb51eafaaa274c4d82e8b35bf86f512,
-        type: 3}
-      propertyPath: m_Radius
-      value: 0.03
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1cb51eafaaa274c4d82e8b35bf86f512, type: 3}
@@ -3873,31 +3863,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 17.916}
---- !u!1 &1644078721 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4979167092229162939, guid: 1cb51eafaaa274c4d82e8b35bf86f512,
-    type: 3}
-  m_PrefabInstance: {fileID: 759359927}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1644078722 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8305437943094621608, guid: 1cb51eafaaa274c4d82e8b35bf86f512,
     type: 3}
   m_PrefabInstance: {fileID: 759359927}
   m_PrefabAsset: {fileID: 0}
---- !u!135 &1644078727
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1644078721}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1654313526 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1573241021530271124, guid: dc0b4b4c363e4de458ba620040b5b315,

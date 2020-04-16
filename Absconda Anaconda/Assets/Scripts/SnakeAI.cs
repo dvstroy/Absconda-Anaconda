@@ -63,9 +63,10 @@ public class SnakeAI : MonoBehaviour
         SnakeDecide();
     }
 
+
     private void SnakeThink()
     {
-        if (isScared || Input.GetMouseButtonDown(0))
+        if (isScared)
         {
             snakeFear = FearTime;
         } else
@@ -91,6 +92,7 @@ public class SnakeAI : MonoBehaviour
         if(nav.remainingDistance <= 1)
         {
             atDestination = true;
+            GetComponent<SnakeAnimations>().StayingStill();
             nav.isStopped = true;
         }
     }
@@ -98,19 +100,14 @@ public class SnakeAI : MonoBehaviour
     public void ScareSnake()
     {
         isScared = true;
-        GetComponent<SnakeAnimations>().Spook();
+                GetComponent<SnakeAnimations>().WakeUp();
+        GetComponent<SnakeAnimations>().RunFast();
     }
     public void SootheSnake()
     {
         isScared = false;
+        GetComponent<SnakeAnimations>().RunSlow();
     }
-
-
-    private void OnTriggerStay(Collider other)
-    {
-        snakeFear = 3;
-    }
-
 
     private void setNewDestination()
     {
@@ -136,6 +133,7 @@ public class SnakeAI : MonoBehaviour
             if (Physics.Raycast(testLocation + transform.position, Vector3.down, out var hit, 100))
             {
                 atDestination = false;
+                GetComponent<SnakeAnimations>().Moving();
                 targetLocation = hit.point;
             }
             
