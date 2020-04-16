@@ -42,8 +42,8 @@ MonoBehaviour:
     y: 0
     width: 346
     height: 527
-  m_MinSize: {x: 204, y: 222}
-  m_MaxSize: {x: 4004, y: 4022}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -145,8 +145,8 @@ MonoBehaviour:
     y: 0
     width: 277
     height: 947
-  m_MinSize: {x: 277, y: 72}
-  m_MaxSize: {x: 4002, y: 4022}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -171,8 +171,8 @@ MonoBehaviour:
     y: 789
     width: 1297
     height: 158
-  m_MinSize: {x: 102, y: 122}
-  m_MaxSize: {x: 4002, y: 4022}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -440,7 +440,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 90330000
     m_LastClickedID: 13200
+<<<<<<< Updated upstream
     m_ExpandedIDs: 00000000c03c0000ce3f0000da3f00001441000028410000d6460000624c0000c252000048560000f2680000f4680000f6680000f8680000
+=======
+    m_ExpandedIDs: 00000000e02f0000ee320000fa3200003434000048340000fc3900008c3f0000fc400000f845000082490000ca5c0000cc5c0000ce5c0000
+>>>>>>> Stashed changes
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -465,6 +469,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
+<<<<<<< Updated upstream
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
@@ -473,16 +478,30 @@ MonoBehaviour:
       m_UserAcceptedRename: 0
       m_Name: WoodlandOST
       m_OriginalName: WoodlandOST
+=======
+    scrollPos: {x: 0, y: 1780}
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: ffffffff00000000e02f0000ee320000fa3200003434000048340000fc3900008c3f0000fc400000f845000082490000ca5c0000cc5c0000ce5c0000
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+>>>>>>> Stashed changes
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
+<<<<<<< Updated upstream
       m_UserData: 59414
+=======
+      m_UserData: 0
+>>>>>>> Stashed changes
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 4}
     m_SearchString: 
@@ -590,10 +609,17 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
+<<<<<<< Updated upstream
       scrollPos: {x: 0, y: 2229}
       m_SelectedIDs: 829dffff
       m_LastClickedID: -25214
       m_ExpandedIDs: 6adeffffdce8ffffdee8ffffe6e8ffffe8e8ffff10e9ffff20e9ffff32e9ffff3ae9ffff5ae9ffffc4efffffd8590000
+=======
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 8ed6ffffc8d6ffffd4d7ffff40d8ffff14f2ffff
+>>>>>>> Stashed changes
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -688,9 +714,15 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0.21696842, y: 0.720506, z: -0.25796333, w: 0.6060122}
   m_Size:
+<<<<<<< Updated upstream
     m_Target: 49.07027
     speed: 2
     m_Value: 46.957195
+=======
+    m_Target: 131.75401
+    speed: 2
+    m_Value: 131.75401
+>>>>>>> Stashed changes
   m_Ortho:
     m_Target: 0
     speed: 2
