@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5584383622684253415}
   - component: {fileID: 5584383622684253414}
   m_Layer: 0
-  m_Name: NavmeshAgent
+  m_Name: UntestedSnakePrefab
   m_TagString: Snake
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -71,6 +71,7 @@ MonoBehaviour:
   homeLocation: {fileID: 0}
   atDestination: 1
   radius: 20
+  playerPosition: {fileID: 0}
   FearTime: 20
 --- !u!136 &5584383622684253414
 CapsuleCollider:

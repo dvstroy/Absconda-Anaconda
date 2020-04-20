@@ -1,5 +1,30 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!135 &1644078727
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4979167092229162939}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1644078723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4979167092229162939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8204a25b2c35c0749803e1612c33e9c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8123795909870439835
 GameObject:
   m_ObjectHideFlags: 0
@@ -43,6 +68,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Character
+      objectReference: {fileID: 0}
+    - target: {fileID: 7932059414669629697, guid: 7011c5b24942e9b4290edb05c2fe3720,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 6363322235716627218, guid: 7011c5b24942e9b4290edb05c2fe3720,
         type: 3}
@@ -106,18 +136,8 @@ PrefabInstance:
       objectReference: {fileID: 3906981531296103905}
     - target: {fileID: 2104794100658394742, guid: 7011c5b24942e9b4290edb05c2fe3720,
         type: 3}
-      propertyPath: timeDisplay
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2104794100658394742, guid: 7011c5b24942e9b4290edb05c2fe3720,
-        type: 3}
       propertyPath: runSpeed
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2104794100658394742, guid: 7011c5b24942e9b4290edb05c2fe3720,
-        type: 3}
-      propertyPath: movementSmooth
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2104794100858800874, guid: 7011c5b24942e9b4290edb05c2fe3720,
         type: 3}
@@ -220,11 +240,6 @@ PrefabInstance:
       propertyPath: followTarget
       value: 
       objectReference: {fileID: 4979167092229162939}
-    - target: {fileID: 8890750995761899607, guid: 0c4c0bad6b0211d4ba9598dd653f52c6,
-        type: 3}
-      propertyPath: lerpSpeed
-      value: 8
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c4c0bad6b0211d4ba9598dd653f52c6, type: 3}
 --- !u!4 &3906981531989414376 stripped
