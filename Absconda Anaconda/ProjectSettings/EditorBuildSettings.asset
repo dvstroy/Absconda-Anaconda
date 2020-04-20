@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Snake AI Showcase.unity
     guid: ccc415f462e394a4591d52f460863be6
   - enabled: 1
-    path: Assets/Scenes/Submission 3 with 3 zones.unity
+    path: Assets/Scenes/All Zones Confirmed.unity
     guid: 2c65e7df32596bb408e7c990c772eded
   - enabled: 1
     path: Assets/Scenes/Endgame.unity
