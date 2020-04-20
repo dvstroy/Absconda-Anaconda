@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class SnakeCatcher : MonoBehaviour
 {
+
+    public int snakeRequired = 3;
     private int snakeCount = 0;
     private void OnTriggerEnter(Collider collision)
     {
@@ -36,7 +38,7 @@ public class SnakeCatcher : MonoBehaviour
 
     private void EndGame()
     {
-        if(snakeCount == 3)
+        if(snakeCount == snakeRequired)
         {
             SceneManager.LoadScene("Endgame", LoadSceneMode.Single);
         }
