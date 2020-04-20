@@ -20,11 +20,19 @@ public class SnakeAI : MonoBehaviour
     //Snake's maximum run distance
     public float radius = 20;
     //Tells the snake to have fear
-    private bool isScared = false;
+    [System.NonSerialized]
+    public bool isScared = false;
     public Transform playerPosition;
     //Tracks how many times the snake repaths
     [System.NonSerialized]
     public int repathCount = 0;
+
+
+    // ----------------------- Variables for referencing in the animation controller script -----------------------
+    [System.NonSerialized]
+    public bool meme;
+
+
 
     [SerializeField]
     private float FearTime;
@@ -55,9 +63,10 @@ public class SnakeAI : MonoBehaviour
         SnakeDecide();
     }
 
+
     private void SnakeThink()
     {
-        if (isScared || Input.GetMouseButtonDown(0))
+        if (isScared)
         {
             snakeFear = FearTime;
         } else
@@ -83,6 +92,7 @@ public class SnakeAI : MonoBehaviour
         if(nav.remainingDistance <= 1)
         {
             atDestination = true;
+            GetComponent<SnakeAnimations>().StayingStill();
             nav.isStopped = true;
         }
     }
@@ -90,18 +100,14 @@ public class SnakeAI : MonoBehaviour
     public void ScareSnake()
     {
         isScared = true;
+                GetComponent<SnakeAnimations>().WakeUp();
+        GetComponent<SnakeAnimations>().RunFast();
     }
     public void SootheSnake()
     {
         isScared = false;
+        GetComponent<SnakeAnimations>().RunSlow();
     }
-
-
-    private void OnTriggerStay(Collider other)
-    {
-        snakeFear = 3;
-    }
-
 
     private void setNewDestination()
     {
@@ -127,6 +133,7 @@ public class SnakeAI : MonoBehaviour
             if (Physics.Raycast(testLocation + transform.position, Vector3.down, out var hit, 100))
             {
                 atDestination = false;
+                GetComponent<SnakeAnimations>().Moving();
                 targetLocation = hit.point;
             }
             
