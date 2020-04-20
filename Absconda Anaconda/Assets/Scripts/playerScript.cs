@@ -129,7 +129,7 @@ public class playerScript : MonoBehaviour
         {
             wantedDirection = Quaternion.Euler(0, wantedDirection.eulerAngles.y + cameraObject.transform.rotation.eulerAngles.y, 0);
             transform.Translate(Vector3.forward * movementSpeed * 0.1f);
-           anim.SetBool("isRunning", true);
+            anim.SetBool("isRunning", true);
         }
         //camDirection = Quaternion.Euler(cameraObject.transform.rotation);
         if(movementSmooth == false)
