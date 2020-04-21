@@ -19,12 +19,13 @@ public class playerScript : MonoBehaviour
     Vector3 debugEulerAngles;
     Vector3 resetPos = Vector3.zero;
     float cameraRotationY = 0;
+    bool cursorVisible = false;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
-        Cursor.visible = false;
+        Cursor.visible = cursorVisible;
         Cursor.lockState = CursorLockMode.Locked;
         isGrounded = true;
     }
@@ -41,6 +42,12 @@ public class playerScript : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
+
+        //if (Input.GetKeyDown(KeyCode.Escape))
+        //{
+        //    Cursor.visible = !cursorVisible;
+        //    cursorVisible = !cursorVisible;
+        //}
 
         //Setting up vars for movement
         var forwardIntent = 0;
