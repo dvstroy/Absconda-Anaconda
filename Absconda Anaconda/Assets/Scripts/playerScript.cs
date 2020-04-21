@@ -36,13 +36,17 @@ public class playerScript : MonoBehaviour
         {
             Reset();
         }
+        //Alt + R resets the entire scene to it's default state
         if (Input.GetKey(KeyCode.LeftAlt) && Input.GetKeyDown(KeyCode.R))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
+        //Setting up vars for movement
         var forwardIntent = 0;
         var horizontalIntent = 0;
+
+        //Taking inputs
         if (Input.GetKey(forward))
         {
             forwardIntent += 1;
@@ -59,33 +63,36 @@ public class playerScript : MonoBehaviour
         {
             horizontalIntent += 1;
         }
-
+        //Storing the direction the player wants to go in
         wantedDirection = new Vector3(horizontalIntent, 0, forwardIntent).normalized;
 
-
+        //Taking jump input
         if (Input.GetKeyDown(jump) && isGrounded)
         {
             wantedJump=true;
         }
     }
 
-
-    // Update is called once per frame
     void FixedUpdate()
     {
+        //This if checks if the player is moving
         if (wantedDirection.magnitude==0)
         {
            anim.SetBool("isRunning", false);
         }
         else
         {
+            //The code that references where the camera is and how that should effect the player
             rb.transform.forward = Quaternion.Euler(0, cameraRotationY, 0) * wantedDirection;
+            //The code that actually moves the palyer
             rb.MovePosition(rb.position + rb.transform.forward * runSpeed * Time.deltaTime);
             anim.SetBool("isRunning", true);
         }
-        //camDirection = Quaternion.Euler(cameraObject.transform.rotation);
+        
+
         if (wantedJump)
         {
+            //Makes the player jump
             rb.velocity = new Vector3(rb.velocity.x, jumpForce, rb.velocity.z);
             anim.SetTrigger("jump");
             wantedJump = false;
@@ -93,11 +100,13 @@ public class playerScript : MonoBehaviour
         
     }
 
+    //For the camera script to tell the player which way the camera is facing, purely on the Y rotaitonal axis
     public void SetCameraForward(Vector3 forward)
     {
         cameraRotationY = Quaternion.FromToRotation(Vector3.forward, new Vector3(forward.x, 0, forward.z)).eulerAngles.y;
     }
 
+    //For other scripts to set the player to be grounded
     public void SetGrounded(bool grounded)
     {
         isGrounded = grounded;
