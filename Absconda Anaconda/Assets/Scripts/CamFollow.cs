@@ -7,6 +7,7 @@ public class CamFollow : MonoBehaviour
     public GameObject followTarget, myCam;
     public Vector3 camZ;
     public float lerpSpeed, camXSensitivity, camYSensitivity;
+    public playerScript player;
 
     private void Start()
     {
@@ -16,6 +17,7 @@ public class CamFollow : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        player.SetCameraForward(myCam.transform.forward);
         transform.Rotate(new Vector3(0, Input.GetAxis("Mouse X"), 0) * camXSensitivity );
         myCam.transform.Rotate(new Vector3(Input.GetAxis("Mouse Y"), 0, 0) * -camYSensitivity);
         myCam.transform.Translate(new Vector3(0, Input.GetAxis("Mouse Y") * -0.1f));

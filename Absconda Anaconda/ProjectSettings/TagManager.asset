@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Snake
   - Ground
+  - AudioTrigger
   layers:
   - Default
   - TransparentFX

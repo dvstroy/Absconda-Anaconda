@@ -16,9 +16,9 @@ public class WoodlandOST : MonoBehaviour
 
     }
 
-    void OnCollisionEnter (Collision col)
+    void OnCollisionEnter (Collision collision)
     {
-      //if (collision.gameObject.tag == "Player")
+      if (collision.gameObject.tag == "AudioTrigger")
       {
         FindObjectOfType<AudioManager>().Play("Woodland");
       }
