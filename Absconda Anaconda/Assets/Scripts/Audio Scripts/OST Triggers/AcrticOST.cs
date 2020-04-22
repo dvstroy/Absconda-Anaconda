@@ -17,7 +17,7 @@ public class AcrticOST : MonoBehaviour
 
     void OnCollisionEnter (Collision col)
     {
-      if (collision.gameObject.tag == "Player")
+      //if (collision.gameObject.tag == "Player")
       {
         FindObjectOfType<AudioManager>().Play("Ice");
       }
