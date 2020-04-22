@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class SnakeCatcher : MonoBehaviour
 {
 
-    public int snakeRequired = 3;
+    public int snakeRequired = 7;
     private int snakeCount = 0;
     private void OnTriggerEnter(Collider collision)
     {
