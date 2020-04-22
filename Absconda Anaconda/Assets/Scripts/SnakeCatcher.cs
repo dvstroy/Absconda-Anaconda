@@ -6,8 +6,14 @@ using UnityEngine.SceneManagement;
 
 public class SnakeCatcher : MonoBehaviour
 {
+    public GameObject completeLevelUI;
 
-    public int snakeRequired = 3;
+    public GameObject scoreText;
+    public AudioSource CollectSound;
+
+
+
+    public int snakeRequired = 7;
     private int snakeCount = 0;
     private void OnTriggerEnter(Collider collision)
     {
@@ -32,6 +38,8 @@ public class SnakeCatcher : MonoBehaviour
             {
                 Destroy(collision.gameObject);
                 snakeCount++;
+                CollectSound.Play();
+                scoreText.GetComponent<Text>().text = "0/" + snakeCount;
                 EndGame();
             }
     }
@@ -40,7 +48,7 @@ public class SnakeCatcher : MonoBehaviour
     {
         if(snakeCount == snakeRequired)
         {
-            SceneManager.LoadScene("Endgame", LoadSceneMode.Single);
+            completeLevelUI.SetActive(true);
         }
     }
 }
