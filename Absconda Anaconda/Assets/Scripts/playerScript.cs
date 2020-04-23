@@ -37,6 +37,7 @@ public class playerScript : MonoBehaviour
         {
             Reset();
         }
+        
         //Alt + R resets the entire scene to it's default state
         if (Input.GetKey(KeyCode.LeftAlt) && Input.GetKeyDown(KeyCode.R))
         {
@@ -124,6 +125,20 @@ public class playerScript : MonoBehaviour
     {
         transform.position = resetPos;
         rb.velocity = new Vector3(0, 0, 0);
+    }
+
+    public void UnlockCursor()
+    {
+        Cursor.visible = !cursorVisible;
+        cursorVisible = true;
+        Cursor.lockState = CursorLockMode.None;
+    }
+
+    public void LockCursor()
+    {
+        Cursor.visible = !cursorVisible;
+        cursorVisible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 }
 

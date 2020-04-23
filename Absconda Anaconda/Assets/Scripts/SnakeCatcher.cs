@@ -38,7 +38,7 @@ public class SnakeCatcher : MonoBehaviour
             {
                 Destroy(collision.gameObject);
                 snakeCount++;
-                CollectSound.Play();
+                //CollectSound.Play();
                 scoreText.GetComponent<Text>().text = "0/" + snakeCount;
                 EndGame();
             }
@@ -48,6 +48,8 @@ public class SnakeCatcher : MonoBehaviour
     {
         if(snakeCount == snakeRequired)
         {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
             completeLevelUI.SetActive(true);
         }
     }
