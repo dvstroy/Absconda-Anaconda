@@ -9,7 +9,7 @@ public class SnakeCatcher : MonoBehaviour
     public GameObject completeLevelUI;
 
     public GameObject scoreText;
-    public AudioSource CollectSound;
+    //public AudioSource CollectSound;
 
 
 
@@ -36,10 +36,13 @@ public class SnakeCatcher : MonoBehaviour
         if (collision.gameObject.tag == "Snake")
             if (Input.GetMouseButtonDown(0))
             {
-                Destroy(collision.gameObject);
                 snakeCount++;
-                CollectSound.Play();
-                scoreText.GetComponent<Text>().text = "0/" + snakeCount;
+                scoreText.GetComponent<Text>().text = snakeCount + "/7";
+                
+                Destroy(collision.gameObject);
+                
+                //CollectSound.Play();
+                
                 EndGame();
             }
     }
