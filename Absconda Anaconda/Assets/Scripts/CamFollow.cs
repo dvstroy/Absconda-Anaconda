@@ -5,7 +5,6 @@ using UnityEngine;
 public class CamFollow : MonoBehaviour
 {
     public GameObject followTarget, myCam;
-    public Vector3 camZ;
     public float lerpSpeed, camXSensitivity, camYSensitivity;
     public playerScript player;
     public float maxMouseHeight = 50;
@@ -14,7 +13,6 @@ public class CamFollow : MonoBehaviour
 
     private void Start()
     {
-        camZ = myCam.transform.position;
         currentMouseHeight = 0;
         currentMouseHeight += Input.GetAxis("Mouse Y");
     }
@@ -23,26 +21,31 @@ public class CamFollow : MonoBehaviour
     {
         player.SetCameraForward(myCam.transform.forward);
         transform.Rotate(new Vector3(0, Input.GetAxis("Mouse X"), 0) * camXSensitivity );
-        currentMouseHeight += Input.GetAxis("Mouse Y");
+        var currentMouseChange = Input.GetAxis("Mouse Y");
+        var intendedMouseHeight = currentMouseChange + currentMouseHeight;
 
-        if(currentMouseHeight < maxMouseHeight && currentMouseHeight > minMouseHeight)
+        if (intendedMouseHeight > maxMouseHeight || intendedMouseHeight < minMouseHeight)
         {
-            myCam.transform.Rotate(new Vector3(Input.GetAxis("Mouse Y"), 0, 0) * -camYSensitivity);
-            myCam.transform.Translate(new Vector3(0, Input.GetAxis("Mouse Y") * -0.1f));
-        }
-        else if(currentMouseHeight > maxMouseHeight)
-        {
-            currentMouseHeight = maxMouseHeight;
-        }
-        else if(currentMouseHeight < minMouseHeight)
-        {
-            currentMouseHeight = minMouseHeight;
+            var extra = 0f;
+            if (intendedMouseHeight > maxMouseHeight)
+            {
+                extra = intendedMouseHeight - maxMouseHeight;
+            }
+            if (intendedMouseHeight < minMouseHeight)
+            {
+                extra = intendedMouseHeight - minMouseHeight;
+            }
+            currentMouseChange -= extra;
         }
 
-        transform.position = new Vector3(Mathf.Lerp(transform.position.x, followTarget.transform.position.x, lerpSpeed * Time.deltaTime), Mathf.Lerp(transform.position.y, followTarget.transform.position.y, lerpSpeed * Time.deltaTime), Mathf.Lerp(transform.position.z, followTarget.transform.position.z, lerpSpeed * Time.deltaTime));
+        
+        
+        myCam.transform.Rotate(new Vector3(currentMouseChange, 0, 0) * -camYSensitivity);
+        myCam.transform.Translate(new Vector3(0, currentMouseChange * -0.1f, 0), Space.World);
+        currentMouseHeight += currentMouseChange;
 
+        transform.position = Vector3.Lerp(transform.position, followTarget.transform.position, 0.2f);
 
-        //myCam.transform.localPosition = new Vector3(transform.localPosition.x, transform.localPosition.y, camZ.z);
-        //transform.rotation = new Quaternion(0, Mathf.Lerp(transform.rotation.y, followTarget.transform.rotation.y, lerpSpeed * Time.deltaTime), 0, 0);
+        
     }
 }

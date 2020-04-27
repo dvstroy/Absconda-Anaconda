@@ -51,6 +51,8 @@ public class SnakeCatcher : MonoBehaviour
     {
         if(snakeCount == snakeRequired)
         {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
             completeLevelUI.SetActive(true);
         }
     }
