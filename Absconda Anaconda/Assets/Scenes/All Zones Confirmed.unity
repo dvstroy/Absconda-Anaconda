@@ -89699,7 +89699,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7355873385143845419}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.8999996, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -89855,7 +89855,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2919014347164812531}
   - component: {fileID: 6772019157331491495}
-  - component: {fileID: 634933991461295535}
   m_Layer: 0
   m_Name: TWRotatorA
   m_TagString: Untagged
@@ -89863,19 +89862,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!65 &634933991461295535
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 634933991461295534}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &742979421097474916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90183,7 +90169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49b385c6475510044bd792dd6f8a2da7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 0.2
+  rotateSpeed: 0.001
 --- !u!23 &1164903159797786690
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -90469,8 +90455,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2032899369441035197}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.93, y: 2.73, z: -105.943756}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 11.93, y: 2.73, z: -107.77}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2919014347164812531}
@@ -90487,7 +90473,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2031713003179224600}
   - component: {fileID: 1136546438837087744}
-  - component: {fileID: 2032899369441035198}
   m_Layer: 0
   m_Name: TumbleWeedRotator3
   m_TagString: Untagged
@@ -90495,19 +90480,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!65 &2032899369441035198
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2032899369441035197}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &2045946281385449252
 Transform:
   m_ObjectHideFlags: 0
@@ -90746,7 +90718,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49b385c6475510044bd792dd6f8a2da7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 0.2
+  rotateSpeed: 0.6
 --- !u!1 &2642100560681403978
 GameObject:
   m_ObjectHideFlags: 0
@@ -90856,7 +90828,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 634933991461295534}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.7800007, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -91047,7 +91019,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8943384107125994827}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.6800003, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -91327,7 +91299,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5593138902729876940}
   - component: {fileID: 6022145874434198074}
-  - component: {fileID: 4819313610871361193}
   m_Layer: 0
   m_Name: TWRotatorB
   m_TagString: Untagged
@@ -91335,19 +91306,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!65 &4819313610871361193
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4819313610871361192}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &4951431839356663179
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -91415,8 +91373,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5163916166209012217}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.5, y: 0.49602357, z: -116.48}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -23.6, y: 0.49602357, z: -112}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4164998282099707003}
@@ -91433,7 +91391,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5149594653455849435}
   - component: {fileID: 7544185764345674231}
-  - component: {fileID: 5163916166209012218}
   m_Layer: 0
   m_Name: TumbleWeedRotator2
   m_TagString: Untagged
@@ -91441,19 +91398,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!65 &5163916166209012218
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5163916166209012217}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &5209669862001474498
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -91623,7 +91567,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4819313610871361192}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.8199997, y: -0.010000013, z: 0.34000015}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -91863,7 +91807,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49b385c6475510044bd792dd6f8a2da7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: -0.2
+  rotateSpeed: -0.02
 --- !u!1 &6113056874792781623
 GameObject:
   m_ObjectHideFlags: 0
@@ -92188,7 +92132,6 @@ GameObject:
   - component: {fileID: 1406064971335528032}
   - component: {fileID: 6642022648540918810}
   - component: {fileID: 324280607905820984}
-  - component: {fileID: 7125416641180199104}
   m_Layer: 0
   m_Name: TW3
   m_TagString: Untagged
@@ -92196,19 +92139,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!65 &7125416641180199104
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7125416641180199103}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.43333334, y: 0.43333334, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7166222337766120217
 GameObject:
   m_ObjectHideFlags: 0
@@ -92321,7 +92251,6 @@ GameObject:
   m_Component:
   - component: {fileID: 158608954083145403}
   - component: {fileID: 8312498276554668710}
-  - component: {fileID: 7355873385143845420}
   m_Layer: 0
   m_Name: TWRotatorB
   m_TagString: Untagged
@@ -92329,19 +92258,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!65 &7355873385143845420
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7355873385143845419}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &7377634872956058001
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -92452,7 +92368,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49b385c6475510044bd792dd6f8a2da7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 0.2
+  rotateSpeed: 0.02
 --- !u!33 &7576659227366528385
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -92540,7 +92456,6 @@ GameObject:
   - component: {fileID: 8165151693631593683}
   - component: {fileID: 8165151693631593685}
   - component: {fileID: 8165151693631593686}
-  - component: {fileID: 8165151693631593684}
   m_Layer: 0
   m_Name: TW1
   m_TagString: Untagged
@@ -92562,19 +92477,6 @@ Transform:
   m_Father: {fileID: 9198344533933423412}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &8165151693631593684
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8165151693631593682}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.43333334, y: 0.43333334, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!212 &8165151693631593685
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -92681,7 +92583,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49b385c6475510044bd792dd6f8a2da7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: -0.2
+  rotateSpeed: -0.001
 --- !u!114 &8646586152255672498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92694,7 +92596,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49b385c6475510044bd792dd6f8a2da7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: -0.2
+  rotateSpeed: -0.6
 --- !u!23 &8696417223585967169
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -92789,7 +92691,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4164998282099707003}
   - component: {fileID: 1791892384722657782}
-  - component: {fileID: 8943384107125994828}
   m_Layer: 0
   m_Name: TWRotatorA
   m_TagString: Untagged
@@ -92797,19 +92698,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!65 &8943384107125994828
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8943384107125994827}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8949954472695372489
 GameObject:
   m_ObjectHideFlags: 0
@@ -92821,7 +92709,6 @@ GameObject:
   - component: {fileID: 1200498215974476827}
   - component: {fileID: 6194147007065807853}
   - component: {fileID: 742979421097474916}
-  - component: {fileID: 8949954472695372490}
   m_Layer: 0
   m_Name: TW2
   m_TagString: Untagged
@@ -92829,19 +92716,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!65 &8949954472695372490
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8949954472695372489}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.43333334, y: 0.43333334, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &9069079990771858409
 GameObject:
   m_ObjectHideFlags: 0
@@ -92933,7 +92807,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9198344533896113927}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.7700005, y: 0.01699997, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -92951,7 +92825,6 @@ GameObject:
   m_Component:
   - component: {fileID: 9198344533896113925}
   - component: {fileID: 1730326581682886288}
-  - component: {fileID: 9198344533896113928}
   m_Layer: 0
   m_Name: TWRotatorA
   m_TagString: Untagged
@@ -92959,19 +92832,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!65 &9198344533896113928
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9198344533896113927}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &9198344533933423412
 Transform:
   m_ObjectHideFlags: 0
@@ -92979,7 +92839,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9198344533933423413}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -92997,7 +92857,6 @@ GameObject:
   m_Component:
   - component: {fileID: 9198344533933423412}
   - component: {fileID: 8646586152255672498}
-  - component: {fileID: 9198344533933423414}
   m_Layer: 0
   m_Name: TWRotatorB
   m_TagString: Untagged
@@ -93005,19 +92864,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!65 &9198344533933423414
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9198344533933423413}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.9020462, y: 1, z: 1}
-  m_Center: {x: 1.3288918, y: 0, z: 0}
 --- !u!4 &9198344534141492765
 Transform:
   m_ObjectHideFlags: 0
@@ -93025,8 +92871,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9198344534141492767}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -18.665203, y: 0.29602355, z: -104.16765}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -26.9, y: 0.29602355, z: -90.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 9198344533896113925}
@@ -93043,7 +92889,6 @@ GameObject:
   m_Component:
   - component: {fileID: 9198344534141492765}
   - component: {fileID: 2558828228359603729}
-  - component: {fileID: 9198344534141492768}
   m_Layer: 0
   m_Name: TumbleWeedRotator1
   m_TagString: Untagged
@@ -93051,16 +92896,3 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!65 &9198344534141492768
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9198344534141492767}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
