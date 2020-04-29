@@ -32,17 +32,29 @@ public class SnakeCatcher : MonoBehaviour
 
     private void OnTriggerStay(Collider collision)
     {
-        if (collision.gameObject.tag == "Snake")
-            if (Input.GetMouseButtonDown(0))
-            {
-                player.GetComponent<playerScript>().enabled = false;
-                FunctionTimer.Create(() => Destroy(collision.gameObject), .5f);
-                FunctionTimer.Create(() => player.GetComponent<playerScript>().enabled = true, .5f);
-                snakeCount++;
-                //CollectSound.Play();
-                scoreText.GetComponent<Text>().text = "0/" + snakeCount;
-                EndGame();
-            }
+      if (collision.gameObject.tag == "Snake")
+          if (Input.GetMouseButtonDown(0))
+          {
+              player.GetComponent<playerScript>().enabled = false;
+              FunctionTimer.Create(() => Destroy(collision.gameObject), .5f);
+              FunctionTimer.Create(() => player.GetComponent<playerScript>().enabled = true, .5f);
+              snakeCount++;
+              //CollectSound.Play();
+              scoreText.GetComponent<Text>().text = "0/" + snakeCount;
+              EndGame();
+          }
+
+        // if (collision.gameObject.tag == "Snake")
+        //     if (Input.GetMouseButtonDown(0))
+        //     {
+        //         player.GetComponent<playerScript>().enabled = false;
+        //         FunctionTimer.Create(() => Destroy(collision.gameObject), .5f);
+        //         FunctionTimer.Create(() => player.GetComponent<playerScript>().enabled = true, .5f);
+        //         snakeCount++;
+        //         //CollectSound.Play();
+        //         scoreText.GetComponent<Text>().text = "0/" + snakeCount;
+        //         EndGame();
+        //     }
 
     }
 
