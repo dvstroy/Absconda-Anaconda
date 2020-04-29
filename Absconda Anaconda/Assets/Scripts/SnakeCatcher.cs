@@ -44,8 +44,9 @@ public class SnakeCatcher : MonoBehaviour
               EndGame();
           }
 
-        // if (collision.gameObject.tag == "Snake")
-        //     if (Input.GetMouseButtonDown(0))
+        // if (other.GetComponent<Tags> != null)
+        //   foreach(string str in other.GetComponent<Tags>().objTags)
+        //     if (str == "DesertSnake" && Input.GetMouseButtonDown(0))
         //     {
         //         player.GetComponent<playerScript>().enabled = false;
         //         FunctionTimer.Create(() => Destroy(collision.gameObject), .5f);
