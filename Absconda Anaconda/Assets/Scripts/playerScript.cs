@@ -37,7 +37,7 @@ public class playerScript : MonoBehaviour
         {
             Reset();
         }
-        
+
         //Alt + R resets the entire scene to it's default state
         if (Input.GetKey(KeyCode.LeftAlt) && Input.GetKeyDown(KeyCode.R))
         {
@@ -79,6 +79,7 @@ public class playerScript : MonoBehaviour
         {
             wantedJump=true;
         }
+        
     }
 
     void FixedUpdate()
@@ -96,7 +97,7 @@ public class playerScript : MonoBehaviour
             rb.MovePosition(rb.position + rb.transform.forward * runSpeed * Time.deltaTime);
             anim.SetBool("isRunning", true);
         }
-        
+
 
         if (wantedJump)
         {
@@ -105,7 +106,7 @@ public class playerScript : MonoBehaviour
             anim.SetTrigger("jump");
             wantedJump = false;
         }
-        
+
     }
 
     //For the camera script to tell the player which way the camera is facing, purely on the Y rotaitonal axis
@@ -141,4 +142,3 @@ public class playerScript : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
     }
 }
-

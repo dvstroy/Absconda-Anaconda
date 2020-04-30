@@ -10,6 +10,6 @@ public class TumbleRotate : MonoBehaviour
     void Update()
     {
         transform.Rotate(0, rotateSpeed, 0);
-        transform.Rotate (new Vector3(0,0,Time.deltaTime*55));
+        transform.Rotate (new Vector3(0,Time.deltaTime*20,0));
     }
 }

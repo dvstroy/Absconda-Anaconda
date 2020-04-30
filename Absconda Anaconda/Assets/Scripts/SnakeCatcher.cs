@@ -9,9 +9,8 @@ public class SnakeCatcher : MonoBehaviour
     public GameObject completeLevelUI;
 
     public GameObject scoreText;
-    //public AudioSource CollectSound;
-
-
+    public AudioSource CollectSound;
+    public GameObject player;
 
     public int snakeRequired = 7;
     private int snakeCount = 0;
@@ -33,25 +32,39 @@ public class SnakeCatcher : MonoBehaviour
 
     private void OnTriggerStay(Collider collision)
     {
-        if (collision.gameObject.tag == "Snake")
-            if (Input.GetMouseButtonDown(0))
-            {
-                snakeCount++;
-                scoreText.GetComponent<Text>().text = snakeCount + "/7";
-                
-                Destroy(collision.gameObject);
-                
-                //CollectSound.Play();
-                
-                EndGame();
-            }
+      if (collision.gameObject.tag == "Snake")
+          if (Input.GetMouseButtonDown(0) && player.GetComponent<playerScript>().enabled)
+          {
+              var anim = player.GetComponent<Animator>();
+              anim.SetTrigger("catchSnake");
+              snakeCount++;
+              FunctionTimer.Create(() => Destroy(collision.gameObject), .5f);
+              player.GetComponent<playerScript>().enabled = false;
+              FunctionTimer.Create(() => player.GetComponent<playerScript>().enabled = true, .5f);
+              //CollectSound.Play();
+              scoreText.GetComponent<Text>().text = "0/" + snakeCount;
+              EndGame();
+          }
+
+        // if (other.GetComponent<Tags> != null)
+        //   foreach(string str in other.GetComponent<Tags>().objTags)
+        //     if (str == "DesertSnake" && Input.GetMouseButtonDown(0))
+        //     {
+        //         player.GetComponent<playerScript>().enabled = false;
+        //         FunctionTimer.Create(() => Destroy(collision.gameObject), .5f);
+        //         FunctionTimer.Create(() => player.GetComponent<playerScript>().enabled = true, .5f);
+        //         snakeCount++;
+        //         //CollectSound.Play();
+        //         scoreText.GetComponent<Text>().text = "0/" + snakeCount;
+        //         EndGame();
+        //     }
+
     }
 
     private void EndGame()
     {
-        if (snakeCount == snakeRequired)
+        if(snakeCount == snakeRequired)
         {
-            GameObject.Find("GameManager").SendMessage("Finish");
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
             completeLevelUI.SetActive(true);
