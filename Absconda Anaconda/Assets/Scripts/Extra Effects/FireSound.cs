@@ -10,4 +10,9 @@ public class FireSound : MonoBehaviour
     {
         SFX.Play();
     }
+
+    void OnTriggerExit(Collider collider)
+    {
+        SFX.Stop();
+    }
 }
