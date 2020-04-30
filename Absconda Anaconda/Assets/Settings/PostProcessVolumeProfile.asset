@@ -58,7 +58,7 @@ MonoBehaviour:
     overrideState: 1
     value: 1
   gradingMode:
-    overrideState: 0
+    overrideState: 1
     value: 1
   externalLut:
     overrideState: 0
@@ -105,17 +105,17 @@ MonoBehaviour:
     overrideState: 0
     value: 0
   saturation:
-    overrideState: 0
-    value: 0
+    overrideState: 1
+    value: 10
   brightness:
     overrideState: 0
     value: 0
   postExposure:
-    overrideState: 0
-    value: 0
+    overrideState: 1
+    value: -0.22
   contrast:
-    overrideState: 0
-    value: 0
+    overrideState: 1
+    value: 13
   mixerRedOutRedIn:
     overrideState: 0
     value: 100
@@ -145,13 +145,13 @@ MonoBehaviour:
     value: 100
   lift:
     overrideState: 1
-    value: {x: 1, y: 0.9741089, z: 0.72395813, w: -0.34308776}
+    value: {x: 0.8871818, y: 0.9128567, z: 1, w: 0.03155204}
   gamma:
     overrideState: 1
-    value: {x: 0.9263382, y: 0.8967459, z: 1, w: 0}
+    value: {x: 0.9263382, y: 0.8967459, z: 1, w: -0.259366}
   gain:
     overrideState: 1
-    value: {x: 0.92855877, y: 0.9200723, z: 1, w: 0.41884816}
+    value: {x: 0.90301436, y: 0.95785517, z: 1, w: 0.7646694}
   masterCurve:
     overrideState: 0
     value:
@@ -1373,13 +1373,13 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 0.5
+    value: 0.81
   color:
-    overrideState: 0
+    overrideState: 1
     value: {r: 0, g: 0, b: 0, a: 1}
   ambientOnly:
-    overrideState: 0
-    value: 1
+    overrideState: 1
+    value: 0
   noiseFilterTolerance:
     overrideState: 0
     value: 0
@@ -1391,7 +1391,7 @@ MonoBehaviour:
     value: -12
   thicknessModifier:
     overrideState: 1
-    value: 1
+    value: 4.6
   directLightingStrength:
     overrideState: 0
     value: 0
@@ -1424,8 +1424,8 @@ MonoBehaviour:
     overrideState: 1
     value: 1
   softKnee:
-    overrideState: 0
-    value: 0.5
+    overrideState: 1
+    value: 0
   clamp:
     overrideState: 0
     value: 65472
@@ -1504,19 +1504,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 556797029e73b2347956b6579e77e05b, type: 3}
   m_Name: DepthOfField
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   enabled:
     overrideState: 1
     value: 1
   focusDistance:
     overrideState: 1
-    value: 16.97
+    value: 0.28
   aperture:
     overrideState: 1
     value: 0.7
   focalLength:
     overrideState: 1
-    value: 4
+    value: 1
   kernelSize:
     overrideState: 1
     value: 1

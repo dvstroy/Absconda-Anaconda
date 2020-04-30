@@ -7,11 +7,9 @@ using UnityEngine.SceneManagement;
 public class SnakeCatcher : MonoBehaviour
 {
     public GameObject completeLevelUI;
-
-    public GameObject scoreText;
+    public Text scoreText;
     public AudioSource CollectSound;
     public GameObject player;
-
     public int snakeRequired = 7;
     private int snakeCount = 0;
     private void OnTriggerEnter(Collider collision)
@@ -42,23 +40,13 @@ public class SnakeCatcher : MonoBehaviour
               player.GetComponent<playerScript>().enabled = false;
               FunctionTimer.Create(() => player.GetComponent<playerScript>().enabled = true, .5f);
               //CollectSound.Play();
-              scoreText.GetComponent<Text>().text = "0/" + snakeCount;
               EndGame();
           }
+    }
 
-        // if (other.GetComponent<Tags> != null)
-        //   foreach(string str in other.GetComponent<Tags>().objTags)
-        //     if (str == "DesertSnake" && Input.GetMouseButtonDown(0))
-        //     {
-        //         player.GetComponent<playerScript>().enabled = false;
-        //         FunctionTimer.Create(() => Destroy(collision.gameObject), .5f);
-        //         FunctionTimer.Create(() => player.GetComponent<playerScript>().enabled = true, .5f);
-        //         snakeCount++;
-        //         //CollectSound.Play();
-        //         scoreText.GetComponent<Text>().text = "0/" + snakeCount;
-        //         EndGame();
-        //     }
-
+    public void Update()
+    {
+        scoreText.text = snakeCount + " / " + snakeRequired;
     }
 
     private void EndGame()

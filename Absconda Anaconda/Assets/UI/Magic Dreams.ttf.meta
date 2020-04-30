@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: ce191f65963ece244a828b98c5767564
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Magic Dreams
+  fontNames:
+  - Magic Dreams
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: c64dbb71387976a4aaab6e0960c01878, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
