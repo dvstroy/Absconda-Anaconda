@@ -33,8 +33,10 @@ public class SnakeCatcher : MonoBehaviour
     private void OnTriggerStay(Collider collision)
     {
       if (collision.gameObject.tag == "Snake")
-          if (Input.GetMouseButtonDown(0))
+          if (Input.GetMouseButtonDown(0) && player.GetComponent<playerScript>().enabled)
           {
+              var anim = player.GetComponent<Animator>();
+              anim.SetTrigger("catchSnake");
               snakeCount++;
               FunctionTimer.Create(() => Destroy(collision.gameObject), .5f);
               player.GetComponent<playerScript>().enabled = false;
