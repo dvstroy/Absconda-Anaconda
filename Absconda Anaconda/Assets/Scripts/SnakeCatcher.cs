@@ -49,8 +49,9 @@ public class SnakeCatcher : MonoBehaviour
 
     private void EndGame()
     {
-        if(snakeCount == snakeRequired)
+        if (snakeCount == snakeRequired)
         {
+            GameObject.Find("GameManager").SendMessage("Finish");
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
             completeLevelUI.SetActive(true);
