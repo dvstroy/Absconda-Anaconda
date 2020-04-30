@@ -21,21 +21,27 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (finished)
             return;
 
 
         float t = Time.time - startTime;
 
-        string minutes = ((int)t / 60).ToString();
-        string seconds = (t % 60).ToString("f2");
+        string minutes = ((int)t / 60).ToString("00");
+        string seconds = (t % 60).ToString("00");
+        string miliseconds = ((int)(t * 100f) % 100).ToString("00");
 
-        timerText.text = minutes + ":" + seconds;
+        timerText.text = minutes + ":" + seconds + ":" + miliseconds;
+
+        PlayerPrefs.SetString("YourTime", minutes + ":" + seconds + ":" + miliseconds);
+
+        timerText.text = minutes + ":" + seconds + ":" + miliseconds;
     }
 
     public void Finish()
     {
         finished = true;
-        timerText.color = Color.yellow;
+       
     }
 }
