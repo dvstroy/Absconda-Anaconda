@@ -35,10 +35,10 @@ public class SnakeCatcher : MonoBehaviour
       if (collision.gameObject.tag == "Snake")
           if (Input.GetMouseButtonDown(0))
           {
-              player.GetComponent<playerScript>().enabled = false;
-              FunctionTimer.Create(() => Destroy(collision.gameObject), .5f);
-              FunctionTimer.Create(() => player.GetComponent<playerScript>().enabled = true, .5f);
               snakeCount++;
+              FunctionTimer.Create(() => Destroy(collision.gameObject), .5f);
+              player.GetComponent<playerScript>().enabled = false;
+              FunctionTimer.Create(() => player.GetComponent<playerScript>().enabled = true, .5f);
               //CollectSound.Play();
               scoreText.GetComponent<Text>().text = "0/" + snakeCount;
               EndGame();

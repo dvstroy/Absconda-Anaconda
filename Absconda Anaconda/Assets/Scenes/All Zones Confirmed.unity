@@ -8913,8 +8913,8 @@ Transform:
   - {fileID: 459846916}
   - {fileID: 1152619894}
   - {fileID: 58799979}
-  - {fileID: 1316624790}
   - {fileID: 19557834}
+  - {fileID: 1316624790}
   - {fileID: 1092492381}
   - {fileID: 33510437}
   - {fileID: 508691458}
@@ -26398,6 +26398,11 @@ PrefabInstance:
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 611324346}
+    - target: {fileID: 3906981531449136214, guid: 1cb51eafaaa274c4d82e8b35bf86f512,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1266302087}
     - target: {fileID: 4609929994374289935, guid: 1cb51eafaaa274c4d82e8b35bf86f512,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -37314,8 +37319,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: a0b9c57f03939624a9fefeb1720f6c32, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 0.83
   m_Pitch: 1
   Loop: 1
@@ -37323,9 +37328,9 @@ AudioSource:
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
-  DopplerLevel: 0.49
-  MinDistance: 1
-  MaxDistance: 9
+  DopplerLevel: 0.79
+  MinDistance: 8.1
+  MaxDistance: 11.03
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -37360,7 +37365,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -37375,7 +37380,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.74444443
+      value: 0.69722223
       inSlope: 0
       outSlope: 0
       tangentMode: 0
