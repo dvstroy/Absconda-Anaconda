@@ -79,12 +79,7 @@ public class playerScript : MonoBehaviour
         {
             wantedJump=true;
         }
-
-        if (Input.GetMouseButtonDown(0))
-        {
-            anim.SetTrigger("catchSnake");
-        }
-
+        
     }
 
     void FixedUpdate()
